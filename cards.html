@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Moto</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <!-- mesma sidebar que na página Carro -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            </a>
+
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">Cadastros</div>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                    aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Configurações</span>
+                </a>
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Tipo de veiculo:</h6>
+                        <a class="collapse-item" href="buttons.html">Carro</a>
+                        <a class="collapse-item active" href="moto.html">Moto</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Manutenções</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Manutenções preventivas:</h6>
+                        <a class="collapse-item" href="utilities-color.html">Troca de óleo</a>
+                        <a class="collapse-item" href="utilities-border.html">Troca de pneus</a>
+                        <a class="collapse-item" href="utilities-animation.html">Limpeza</a>
+                        <a class="collapse-item" href="utilities-other.html">Outros</a>
+                    </div>
+                </div>
+            </li>
+
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">Relatórios</div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span></a>
+            </li>
+
+            <hr class="sidebar-divider d-none d-md-block">
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Alerts e Mensagens (igual página Carro) -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <!-- End of Topbar -->
+
+                <div class="container-fluid">
+                    <h1 class="h3 mb-4 text-gray-800">Moto</h1>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+
+                            <!-- Cadastro -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 border-bottom">
+                                    <h6 class="m-0 font-weight-bold text-primary">Cadastro de Moto</h6>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <img src="moto.png" width="190" height="190" class="mb-3">
+
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="nomeVeiculo">Nome do veículo</label>
+                                            <input type="text" class="form-control" id="nomeVeiculo"
+                                                placeholder="Ex: Honda CG 160">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="modeloVeiculo">Modelo</label>
+                                            <input type="text" class="form-control" id="modeloVeiculo"
+                                                placeholder="Ex: 2024">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="placaVeiculo">Placa</label>
+                                            <input type="text" class="form-control" id="placaVeiculo"
+                                                placeholder="Ex: ABC-1234">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="kmRodados">KMs rodados</label>
+                                            <input type="number" class="form-control" id="kmRodados"
+                                                placeholder="Ex: 15000">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary mt-2">Salvar</button>
+                                    </form>
+
+                                    <hr>
+                                </div>
+                            </div>
+
+                            <!-- Ações Rápidas -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Ações Rápidas</h6>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <p>Gerencie seus veículos rapidamente usando os botões abaixo.</p>
+
+                                    <a href="#" class="btn btn-success btn-icon-split mb-2">
+                                        <span class="icon text-white-50"><i class="fas fa-plus"></i></span>
+                                        <span class="text">Adicionar Veículo</span>
+                                    </a><br>
+
+                                    <a href="#" class="btn btn-warning btn-icon-split mb-2">
+                                        <span class="icon text-white-50"><i class="fas fa-edit"></i></span>
+                                        <span class="text">Editar Cadastros</span>
+                                    </a><br>
+
+                                    <a href="#" class="btn btn-danger btn-icon-split mb-2">
+                                        <span class="icon text-white-50"><i class="fas fa-trash"></i></span>
+                                        <span class="text">Remover Veículo</span>
+                                    </a><br>
+
+                                    <a href="#" class="btn btn-info btn-icon

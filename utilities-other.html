@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Painel de Controle de Despesas">
+    <meta name="author" content="">
+
+    <title>Controle de Despesas</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Meu Veículo</div>
+            </a>
+
+            <hr class="sidebar-divider my-0">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Painel</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading">
+                Seções
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="despesas.html">
+                    <i class="fas fa-fw fa-wallet"></i>
+                    <span>Despesas</span></a>
+            </li>
+
+            <hr class="sidebar-divider d-none d-md-block">
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <h5 class="m-0 font-weight-bold text-primary">Controle de Despesas do Veículo</h5>
+                </nav>
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800">Despesas do Veículo</h1>
+
+                    <div class="row">
+
+                        <!-- Card Total -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Total Gasto no Mês</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">R$ 1.240,00</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-wallet fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Combustível -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Combustível</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">R$ 600,00</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-gas-pump fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Manutenção -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                Manutenção</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">R$ 400,00</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-tools fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Outros -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                                Outros Custos</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">R$ 240,00</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-receipt fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gráfico + Lista + Cadastro -->
+                    <div class="row">
+
+                        <!-- Gráfico -->
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Resumo de Despesas</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-pie pt-4 pb-2">
+                                        <canvas id="chartDespesas"></canvas>
+                                    </div>
+                                    <div class="mt-4 text-center small">
+                                        <span class="mr-2"><i class="fas fa-circle text-success"></i> Combustível</span>
+                                        <span class="mr-2"><i class="fas fa-circle text-warning"></i> Manutenção</span>
+                                        <span class="mr-2"><i class="fas fa-circle text-info"></i> Outros</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lista + Cadastro -->
+                        <div class="col-xl-4 col-lg-5">
+
+                            <!-- Lista -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Últimos Lançamentos</h6>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Abastecimento
+                                            <span class="badge badge-success badge-pill">R$ 200</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Troca de óleo
+                                            <span class="badge badge-warning badge-pill">R$ 150</span>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            Lavagem completa
+                                            <span class="badge badge-info badge-pill">R$ 60</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Card Cadastro de Despesas -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Cadastrar Despesa</h6>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="tipoDespesa">Tipo de Despesa</label>
+                                            <select class="form-control" id="tipoDespesa">
+                                                <option>Troca de óleo</option>
+                                                <option>Troca de pneus</option>
+                                                <option>Limpeza</option>
+                                                <option>Outros</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="descricaoDespesa">Descrição</label>
+                                            <input type="text" class="form-control" id="descricaoDespesa" placeholder="Ex: Abastecimento no posto X">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="valorDespesa">Valor (R$)</label>
+                                            <input type="number" step="0.01" class="form-control" id="valorDespesa" placeholder="Ex: 150.00">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="dataDespesa">Data</label>
+                                            <input type="date" class="form-control" id="dataDespesa">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary btn-block mt-2">Adicionar Despesa</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Gráfico de Despesas -->
+    <script>
+        const ctx = document.getElementById("chartDespesas");
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Combustível', 'Manutenção', 'Outros'],
+                datasets: [{
+                    data: [600, 400, 240],
+                    backgroundColor: ['#1cc88a', '#f6c23e', '#36b9cc'],
+                    hoverBackgroundColor: ['#17a673', '#dda20a', '#2c9faf'],
+                    hoverBorderColor: "rgba(234, 236, 244, 1)",
+                }],
+            },
+            options: {
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                cutout: '75%',
+            },
+        });
+    </script>
+
+</body>
+
+</html>
