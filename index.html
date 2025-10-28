@@ -5,10 +5,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Controle de Gastos Veicular</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Controle de Gastos Veicular - Painel</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- jsPDF -->
@@ -16,87 +23,198 @@
 </head>
 
 <body id="page-top">
-
     <!-- Page Wrapper -->
     <div id="wrapper">
 
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-car"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Gastos Veiculares</div>
+                <div class="sidebar-brand-text mx-3">Controle <sup>Veicular</sup></div>
             </a>
-
-            <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-tachometer-alt"></i>
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Painel</span></a>
             </li>
-
-            <!-- Divider -->
             <hr class="sidebar-divider">
+            <div class="sidebar-heading">Veículos</div>
 
-            <!-- Nav Item -->
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-wrench"></i>
-                    <span>Manutenções</span></a>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVeiculos"
+                    aria-expanded="true" aria-controls="collapseVeiculos">
+                    <i class="fas fa-fw fa-car"></i>
+                    <span>Tipos</span>
+                </a>
+                <div id="collapseVeiculos" class="collapse" aria-labelledby="headingVeiculos"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Tipo de veículo:</h6>
+                        <a class="collapse-item" href="buttons.html">Carro</a>
+                        <a class="collapse-item" href="cards.html">Moto</a>
+                    </div>
+                </div>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-gas-pump"></i>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseManutencao"
+                    aria-expanded="true" aria-controls="collapseManutencao">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Manutenção</span>
+                </a>
+                <div id="collapseManutencao" class="collapse" aria-labelledby="headingManutencao"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Manutenções preventivas:</h6>
+                        <a class="collapse-item" href="utilities-color.html">Troca de óleo</a>
+                        <a class="collapse-item" href="utilities-border.html">Troca de pneus</a>
+                        <a class="collapse-item" href="utilities-animation.html">Limpeza</a>
+                        <a class="collapse-item" href="utilities-other.html">Outros</a>
+                    </div>
+                </div>
+            </li>
+
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">Histórico</div>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseHistorico"
+                    aria-expanded="true" aria-controls="collapseHistorico">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Documentos</span>
+                </a>
+                <div id="collapseHistorico" class="collapse" aria-labelledby="headingHistorico"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Tipo de documento:</h6>
+                        <a class="collapse-item" href="blank.html">Veiculo</a>
+                        <a class="collapse-item" href="blank.html">Motorista</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
                     <span>Consumo</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tabelas</span></a>
             </li>
 
             <hr class="sidebar-divider d-none d-md-block">
 
-            <!-- Sidebar Toggler -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
-
         </ul>
         <!-- End of Sidebar -->
 
-        <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
-
-            <!-- Main Content -->
             <div id="content">
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-                    <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <h5 class="m-0 font-weight-bold text-primary">Painel de Controle</h5>
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Pesquisar..."
+                                aria-label="Pesquisar" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
 
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">Centro de Alertas</h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">12 Dezembro 2025</div>
+                                        <span class="font-weight-bold">Novo relatório mensal disponível!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Ver todos os
+                                    alertas</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#"><i
+                                        class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> Perfil</a>
+                                <a class="dropdown-item" href="#"><i
+                                        class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i> Configurações</a>
+                                <a class="dropdown-item" href="#"><i
+                                        class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> Registro de Atividades</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i
+                                        class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Sair</a>
+                            </div>
+                        </li>
+                    </ul>
                 </nav>
-                <!-- End of Topbar -->
 
-                <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Painel de Controle</h1>
+                        <div>
+                            <a href="#" id="btnRelatorio" class="btn btn-sm btn-primary shadow-sm"><i
+                                    class="fas fa-download fa-sm text-white-50"></i> Gerar Relatório</a>
+                            <a href="#" class="btn btn-sm btn-success shadow-sm"><i
+                                    class="fas fa-plus fa-sm text-white-50"></i> Adicionar Gasto</a>
+                        </div>
+                    </div>
 
-                    <!-- Cards resumo -->
+                    <!-- Cards -->
                     <div class="row">
-
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
-                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Despesas Mensal</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">R$ 400,00</div>
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Despesas (Mensal)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">R$400,00 <span
+                                                    class="badge badge-warning">⚠️</span></div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-wallet fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -104,8 +222,16 @@
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
-                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Manutenção Anual</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">R$ 215,00</div>
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Manutenção (Anual)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">R$215,00</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-tools fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -113,8 +239,16 @@
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-warning shadow h-100 py-2">
                                 <div class="card-body">
-                                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Quilometragem Atual</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">120.000 km</div>
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                Quilometragem atual</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">120.000 km</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-road fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -122,33 +256,50 @@
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
-                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Manutenções Concluídas</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">50%</div>
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                                Manutenções concluídas</div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div
+                                                        class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="progress progress-sm mr-2">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-
-                    <div class="text-right mb-4">
-                        <button id="btnRelatorio" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Gerar Relatório</button>
                     </div>
 
                 </div>
-                <!-- /.container-fluid -->
-
+                <!-- End Container -->
             </div>
-            <!-- End of Main Content -->
 
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Rodei+ 2025</span>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <!-- End of Content Wrapper -->
-
     </div>
-    <!-- End of Page Wrapper -->
 
-
-    <!-- Modal de Pré-Visualização -->
-    <div class="modal fade" id="previewModal" tabindex="-1" role="dialog" aria-labelledby="previewModalLabel" aria-hidden="true">
+    <!-- Modal Relatório -->
+    <div class="modal fade" id="previewModal" tabindex="-1" role="dialog" aria-labelledby="previewModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
@@ -158,7 +309,6 @@
                     </button>
                 </div>
                 <div class="modal-body">
-
                     <h4 class="text-center text-primary mb-4">Relatório de Gastos Veicular</h4>
 
                     <table class="table table-bordered">
@@ -185,7 +335,6 @@
 
                     <p><strong>Quilometragem Atual:</strong> 120.000 km</p>
                     <p><strong>Manutenções Concluídas:</strong> 50%</p>
-
                 </div>
                 <div class="modal-footer">
                     <button id="gerarPDF" class="btn btn-success"><i class="fas fa-download"></i> Gerar PDF</button>
@@ -198,33 +347,32 @@
     <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="js/sb-admin-2.min.js"></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
 
     <script>
         const { jsPDF } = window.jspdf;
 
-        // Abre a pré-visualização
         document.getElementById('btnRelatorio').addEventListener('click', () => {
             $('#previewModal').modal('show');
         });
 
-        // Gera o PDF
         document.getElementById('gerarPDF').addEventListener('click', () => {
             const doc = new jsPDF();
             doc.setFontSize(18);
             doc.text("Relatório de Gastos Veicular", 20, 20);
-
             doc.setFontSize(12);
             doc.text("Despesas Mensal: R$400,00", 20, 40);
             doc.text("Manutenção Anual: R$215,00", 20, 50);
             doc.text("Quilometragem Atual: 120.000 km", 20, 60);
             doc.text("Manutenções Concluídas: 50%", 20, 70);
-
             doc.save("relatorio_gastos.pdf");
             $('#previewModal').modal('hide');
         });
     </script>
-
 </body>
 
 </html>
