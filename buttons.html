@@ -22,7 +22,6 @@
 
 <body id="page-top">
 
-    <!-- Page Wrapper -->
     <div id="wrapper">
 
         <!-- Sidebar -->
@@ -30,7 +29,7 @@
 
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-motorcycle"></i>
+                    <i class="fas fa-car"></i>
                 </div>
                 <div class="sidebar-brand-text mx-3">Controle <sup>Veicular</sup></div>
             </a>
@@ -57,8 +56,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Tipo de veículo:</h6>
-                        <a class="collapse-item" href="buttons.html">Carro</a>
-                        <a class="collapse-item active" href="moto.html">Moto</a>
+                        <a class="collapse-item active" href="carro.html">Carro</a>
+                        <a class="collapse-item" href="moto.html">Moto</a>
                     </div>
                 </div>
             </li>
@@ -100,7 +99,6 @@
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
-
         </ul>
         <!-- End of Sidebar -->
 
@@ -127,7 +125,7 @@
                 <!-- End of Topbar -->
 
                 <div class="container-fluid">
-                    <h1 class="h3 mb-4 text-gray-800">Moto</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Carro</h1>
 
                     <div class="row">
                         <div class="col-lg-6">
@@ -139,13 +137,13 @@
                                 </div>
 
                                 <div class="card-body text-center">
-                                    <img src="moto.png" width="190" height="190" class="mb-3">
+                                    <img src="carro.png" width="190" height="190" class="mb-3">
 
                                     <form>
                                         <div class="form-group">
-                                            <label for="nomeVeiculo">Nome do Carro</label>
+                                            <label for="nomeVeiculo">Nome do carro</label>
                                             <input type="text" class="form-control" id="nomeVeiculo"
-                                                placeholder="Ex: Honda CG 160">
+                                                placeholder="Ex: Honda Fit">
                                         </div>
 
                                         <div class="form-group">
@@ -178,7 +176,7 @@
                                 </div>
 
                                 <div class="card-body text-center">
-                                    <p>Gerencie suas motos rapidamente usando os botões abaixo.</p>
+                                    <p>Gerencie seus carros rapidamente usando os botões abaixo.</p>
 
                                     <a href="#" class="btn btn-success btn-icon-split mb-2">
                                         <span class="icon text-white-50"><i class="fas fa-plus"></i></span>
@@ -218,27 +216,27 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- SCRIPT PARA SALVAR E MOSTRAR A MOTO -->
+    <!-- SCRIPT PARA SALVAR E MOSTRAR O CARRO -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const form = document.querySelector("form");
             const cardBody = document.querySelector(".card-body.text-center");
 
-            function mostrarMotoSalva() {
-                const moto = JSON.parse(localStorage.getItem("moto"));
-                if (moto) {
+            function mostrarCarroSalvo() {
+                const carro = JSON.parse(localStorage.getItem("carro"));
+                if (carro) {
                     cardBody.innerHTML = `
-                        <img src="moto.png" width="190" height="190" class="mb-3">
-                        <h5 class="text-primary mb-3">🏍️ ${moto.nome}</h5>
-                        <p><strong>Modelo:</strong> ${moto.modelo}</p>
-                        <p><strong>Placa:</strong> ${moto.placa}</p>
-                        <p><strong>KMs rodados:</strong> ${moto.km}</p>
+                        <img src="carro.png" width="190" height="190" class="mb-3">
+                        <h5 class="text-primary mb-3">🚗 ${carro.nome}</h5>
+                        <p><strong>Modelo:</strong> ${carro.modelo}</p>
+                        <p><strong>Placa:</strong> ${carro.placa}</p>
+                        <p><strong>KMs rodados:</strong> ${carro.km}</p>
 
                         <button id="editarBtn" class="btn btn-warning mt-2">Editar</button>
                     `;
 
                     document.getElementById("editarBtn").addEventListener("click", () => {
-                        localStorage.removeItem("moto");
+                        localStorage.removeItem("carro");
                         location.reload();
                     });
                 }
@@ -256,13 +254,13 @@
                     return;
                 }
 
-                const moto = { nome, modelo, placa, km };
-                localStorage.setItem("moto", JSON.stringify(moto));
+                const carro = { nome, modelo, placa, km };
+                localStorage.setItem("carro", JSON.stringify(carro));
 
-                mostrarMotoSalva();
+                mostrarCarroSalvo();
             });
 
-            mostrarMotoSalva(); // Mostra moto salva ao carregar
+            mostrarCarroSalvo();
         });
     </script>
 
