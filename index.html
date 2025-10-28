@@ -5,13 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Controle de Gastos Veicular - Painel</title>
+    <title>Controle de Gastos Veicular</title>
 
-    <!-- Custom fonts -->
+    <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
-
-    <!-- Custom styles -->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- jsPDF -->
@@ -27,103 +24,79 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-car"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Controle <sup>Veicular</sup></div>
+                <div class="sidebar-brand-text mx-3">Gastos Veiculares</div>
             </a>
 
+            <!-- Divider -->
             <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                <a class="nav-link" href="#">
+                    <i class="fas fa-tachometer-alt"></i>
                     <span>Painel</span></a>
             </li>
 
+            <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <div class="sidebar-heading">Veículos</div>
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVeiculos">
-                    <i class="fas fa-fw fa-car"></i>
-                    <span>Tipos</span>
-                </a>
-                <div id="collapseVeiculos" class="collapse">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Carro</a>
-                        <a class="collapse-item" href="#">Moto</a>
-                    </div>
-                </div>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseManutencao">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Manutenção</span>
-                </a>
-                <div id="collapseManutencao" class="collapse">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Troca de óleo</a>
-                        <a class="collapse-item" href="#">Troca de pneus</a>
-                        <a class="collapse-item" href="#">Limpeza</a>
-                        <a class="collapse-item" href="#">Outros</a>
-                    </div>
-                </div>
-            </li>
-
-            <hr class="sidebar-divider">
-
-            <div class="sidebar-heading">Histórico</div>
-
+            <!-- Nav Item -->
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Documentos</span></a>
+                    <i class="fas fa-wrench"></i>
+                    <span>Manutenções</span></a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="fas fa-gas-pump"></i>
                     <span>Consumo</span></a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tabelas</span></a>
-            </li>
-
             <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
+
         </ul>
         <!-- End of Sidebar -->
-
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
+            <!-- Main Content -->
             <div id="content">
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-                    <h4 class="m-0 font-weight-bold text-primary">Painel de Controle</h4>
-                </nav>
 
-                <!-- Main Content -->
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <h5 class="m-0 font-weight-bold text-primary">Painel de Controle</h5>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Cards -->
+                    <!-- Cards resumo -->
                     <div class="row">
+
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
-                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                        Despesas (Mensal)</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">R$400,00</div>
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Despesas Mensal</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">R$ 400,00</div>
                                 </div>
                             </div>
                         </div>
@@ -131,9 +104,8 @@
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
-                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                        Manutenção (Anual)</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">R$215,00</div>
+                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Manutenção Anual</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">R$ 215,00</div>
                                 </div>
                             </div>
                         </div>
@@ -141,8 +113,7 @@
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-warning shadow h-100 py-2">
                                 <div class="card-body">
-                                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                        Quilometragem Atual</div>
+                                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Quilometragem Atual</div>
                                     <div class="h5 mb-0 font-weight-bold text-gray-800">120.000 km</div>
                                 </div>
                             </div>
@@ -151,134 +122,109 @@
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
-                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                        Manutenções Concluídas</div>
-                                    <div class="progress progress-sm mb-2">
-                                        <div class="progress-bar bg-info" style="width: 50%"></div>
-                                    </div>
+                                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Manutenções Concluídas</div>
                                     <div class="h5 mb-0 font-weight-bold text-gray-800">50%</div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
-                    <!-- Botão -->
-                    <div class="mb-4">
+                    <div class="text-right mb-4">
                         <button id="btnRelatorio" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Gerar Relatório</button>
                     </div>
 
-                    <!-- Tabela de Despesas -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Gastos Recentes</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead class="thead-light">
-                                        <tr>
-                                            <th>Data</th>
-                                            <th>Descrição</th>
-                                            <th>Categoria</th>
-                                            <th>Valor (R$)</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>15/10/2025</td>
-                                            <td>Troca de óleo</td>
-                                            <td>Manutenção</td>
-                                            <td>120,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>20/10/2025</td>
-                                            <td>Gasolina</td>
-                                            <td>Combustível</td>
-                                            <td>250,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>25/10/2025</td>
-                                            <td>Lavagem completa</td>
-                                            <td>Serviço</td>
-                                            <td>30,00</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                <!-- /.container-fluid -->
 
-                    <!-- Tabela de Manutenções -->
-                    <div class="card shadow mb-5">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-success">Manutenções Programadas</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead class="thead-light">
-                                        <tr>
-                                            <th>Serviço</th>
-                                            <th>Data Prevista</th>
-                                            <th>Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Troca de pneus</td>
-                                            <td>10/11/2025</td>
-                                            <td><span class="badge badge-warning">Pendente</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Troca de filtros</td>
-                                            <td>22/11/2025</td>
-                                            <td><span class="badge badge-info">Agendado</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Balanceamento</td>
-                                            <td>01/12/2025</td>
-                                            <td><span class="badge badge-success">Concluído</span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <!-- End of Main Content -->
 
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+
+    <!-- Modal de Pré-Visualização -->
+    <div class="modal fade" id="previewModal" tabindex="-1" role="dialog" aria-labelledby="previewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Pré-Visualização do Relatório</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <h4 class="text-center text-primary mb-4">Relatório de Gastos Veicular</h4>
+
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Descrição</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Despesas Mensal</td>
+                                <td>Custos com combustível e pequenas manutenções</td>
+                                <td>R$ 400,00</td>
+                            </tr>
+                            <tr>
+                                <td>Manutenção Anual</td>
+                                <td>Troca de pneus e revisão geral</td>
+                                <td>R$ 215,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p><strong>Quilometragem Atual:</strong> 120.000 km</p>
+                    <p><strong>Manutenções Concluídas:</strong> 50%</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button id="gerarPDF" class="btn btn-success"><i class="fas fa-download"></i> Gerar PDF</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                 </div>
             </div>
-
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto text-center">
-                    <span>Copyright &copy; Rodei+ 2025</span>
-                </div>
-            </footer>
-
         </div>
     </div>
 
     <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="js/sb-admin-2.min.js"></script>
 
     <script>
-        document.getElementById('btnRelatorio').addEventListener('click', () => {
-            const { jsPDF } = window.jspdf;
-            const doc = new jsPDF();
+        const { jsPDF } = window.jspdf;
 
+        // Abre a pré-visualização
+        document.getElementById('btnRelatorio').addEventListener('click', () => {
+            $('#previewModal').modal('show');
+        });
+
+        // Gera o PDF
+        document.getElementById('gerarPDF').addEventListener('click', () => {
+            const doc = new jsPDF();
             doc.setFontSize(18);
             doc.text("Relatório de Gastos Veicular", 20, 20);
 
             doc.setFontSize(12);
             doc.text("Despesas Mensal: R$400,00", 20, 40);
             doc.text("Manutenção Anual: R$215,00", 20, 50);
-            doc.text("Quilometragem atual: 120.000 km", 20, 60);
-            doc.text("Manutenções concluídas: 50%", 20, 70);
+            doc.text("Quilometragem Atual: 120.000 km", 20, 60);
+            doc.text("Manutenções Concluídas: 50%", 20, 70);
 
             doc.save("relatorio_gastos.pdf");
+            $('#previewModal').modal('hide');
         });
     </script>
+
 </body>
+
 </html>
