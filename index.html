@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Controle de Gastos Veicular - Painel</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -28,6 +28,7 @@
 
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-car"></i>
@@ -40,15 +41,16 @@
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Painel</span>
-                </a>
+                    <span>Painel</span></a>
             </li>
 
             <hr class="sidebar-divider">
+
             <div class="sidebar-heading">Veículos</div>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVeiculos" aria-expanded="true" aria-controls="collapseVeiculos">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVeiculos"
+                    aria-expanded="true" aria-controls="collapseVeiculos">
                     <i class="fas fa-fw fa-car"></i>
                     <span>Tipos</span>
                 </a>
@@ -62,20 +64,55 @@
             </li>
 
             <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseManutencao"
+                    aria-expanded="true" aria-controls="collapseManutencao">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Manutenção</span>
+                </a>
+                <div id="collapseManutencao" class="collapse" aria-labelledby="headingManutencao" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Manutenções preventivas:</h6>
+                        <a class="collapse-item" href="utilities-color.html">Troca de óleo</a>
+                        <a class="collapse-item" href="utilities-border.html">Troca de pneus</a>
+                        <a class="collapse-item" href="utilities-animation.html">Limpeza</a>
+                        <a class="collapse-item" href="utilities-other.html">Outros</a>
+                    </div>
+                </div>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading">Histórico</div>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseHistorico"
+                    aria-expanded="true" aria-controls="collapseHistorico">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Documentos</span>
+                </a>
+                <div id="collapseHistorico" class="collapse" aria-labelledby="headingHistorico" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Tipo de documento:</h6>
+                        <a class="collapse-item" href="blank.html">Veiculo</a>
+                        <a class="collapse-item" href="blank.html">Motorista</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Consumo</span>
-                </a>
+                    <span>Consumo</span></a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Tabelas</span>
-                </a>
+                    <span>Tabelas</span></a>
             </li>
 
             <hr class="sidebar-divider d-none d-md-block">
+
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
@@ -122,6 +159,7 @@
 
                     <!-- Content Row -->
                     <div class="row">
+                        <!-- Despesas Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
@@ -139,6 +177,7 @@
                             </div>
                         </div>
 
+                        <!-- Manutenção Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
@@ -156,6 +195,7 @@
                             </div>
                         </div>
 
+                        <!-- Quilometragem Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-warning shadow h-100 py-2">
                                 <div class="card-body">
@@ -173,6 +213,7 @@
                             </div>
                         </div>
 
+                        <!-- Manutenções Percentual -->
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
@@ -201,11 +242,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
 
             </div>
+            <!-- End of Main Content -->
 
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
@@ -216,66 +258,38 @@
             </footer>
 
         </div>
+        <!-- End of Content Wrapper -->
 
     </div>
+    <!-- End of Page Wrapper -->
 
-    <!-- Scroll to Top -->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Pronto para sair?</h5>
-                    <button class="close" type="button" data-dismiss="modal">
-                        <span>×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Clique em "Sair" abaixo para encerrar sua sessão.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                    <a class="btn btn-primary" href="login.html">Sair</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- jsPDF Gerar Relatório -->
     <script>
         document.getElementById('btnRelatorio').addEventListener('click', () => {
             const { jsPDF } = window.jspdf;
             const doc = new jsPDF();
 
-            // Adicionar logo local
-            const logo = 'img/logo.png'; // coloque o arquivo da sua logo aqui
-            const img = new Image();
-            img.src = logo;
-            img.onload = () => {
-                doc.addImage(img, 'PNG', 14, 10, 25, 25);
+            // Título
+            doc.setFontSize(18);
+            doc.text("Relatório de Gastos Veicular", 20, 20);
 
-                // Título
-                doc.setFontSize(18);
-                doc.text("Relatório de Gastos Veicular", 50, 20);
+            // Dados dos cards
+            doc.setFontSize(12);
+            doc.text("Despesas Mensal: R$400,00", 20, 40);
+            doc.text("Manutenção Anual: R$215,00", 20, 50);
+            doc.text("Quilometragem atual: 120.000 km", 20, 60);
+            doc.text("Manutenções concluídas: 50%", 20, 70);
 
-                // Dados dos cards (exemplo)
-                doc.setFontSize(12);
-                doc.text("Despesas Mensal: R$400,00", 20, 50);
-                doc.text("Manutenção Anual: R$215,00", 20, 60);
-                doc.text("Quilometragem atual: 120.000 km", 20, 70);
-                doc.text("Manutenções concluídas: 50%", 20, 80);
-
-                // Salvar PDF
-                doc.save("relatorio_gastos.pdf");
-            };
+            // Salvar PDF
+            doc.save("relatorio_gastos.pdf");
         });
     </script>
 
